@@ -89,23 +89,38 @@ export default function Payment({ navigation }) {
 						source={require("../assets/smallcard.png")}
 						resizeMode="contain"
 					/>
-					<View style={{ marginLeft: 20 }}>
-						<Text
-							style={{
-								color: "#62319e",
-								fontSize: 60 / PixelRatio.get(),
-								fontWeight: "bold",
-							}}>
-							Travel Card
-						</Text>
-						<Text
-							style={{
-								color: "#8f6cba",
-								fontSize: 42 / PixelRatio.get(),
-								marginTop: 6,
-							}}>
-							034-56246-0124
-						</Text>
+					<View
+						style={{
+							marginLeft: 20,
+							flexDirection: "row",
+							alignItems: "center",
+							justifyContent: "space-between",
+							flex: 1,
+						}}>
+						<View>
+							<Text
+								style={{
+									color: "#62319e",
+									fontSize: 60 / PixelRatio.get(),
+									fontWeight: "bold",
+								}}>
+								Travel Card
+							</Text>
+							<Text
+								style={{
+									color: "#8f6cba",
+									fontSize: 42 / PixelRatio.get(),
+								}}>
+								Mastercard - 7890
+							</Text>
+						</View>
+						<View>
+							<MaterialCommunityIcons
+								name="chevron-right"
+								size={24}
+								color="#62319e"
+							/>
+						</View>
 					</View>
 				</View>
 				<View
